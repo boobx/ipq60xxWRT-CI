@@ -3,24 +3,6 @@ CONFIG_PACKAGE_luci-theme-argon=y
 CONFIG_PACKAGE_luci-app-upnp=y
 CONFIG_PACKAGE_luci-app-mwan3=y
 
-# 禁用 APK 包管理器
-CONFIG_PKG_APK=n
-
-# 启用 IPK 包管理器
-CONFIG_PKG_OPKG=y
-
-# 启用 opkg 相关支持
-CONFIG_PACKAGE_opkg=y
-CONFIG_PACKAGE_luci-app-opkg=y
-
-# 禁用 APK 相关包
-# CONFIG_PACKAGE_apk-tools is not set
-# CONFIG_PACKAGE_luci-app-apk is not set
-
-# 确保 base-files 依赖 opkg
-CONFIG_PACKAGE_base-files=y
-CONFIG_PACKAGE_base-files-depends=+opkg
-
 #参数调整
 CONFIG_DEVEL=y
 CONFIG_CCACHE=y
